@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(97, 97, 97);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.316);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+
+        nav:hover { 
+            text-decoration: underline;
+
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.301);
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(161, 161, 161);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+
+        }
+        
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<!-- Para criar uma caixa box-level utilizar o <div>
+    para criar uma caixa inline-level utilizar o <span>
+        
+    A outras caixas como header, main e footer também são divs, porém serve para a organização do nosso site.
+    -->
+        <header>  <!-- Cabeçalho -->
+            <h1> Meu site</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+        </header>
+        <main>  <!-- conteúdo principal -->
+            <section id="assuntos">
+             <p>Esportes Política Tecnologia</p>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Noticias sobre o brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, suscipit ipsa commodi a quo, inventore, qui blanditiis iure facere tempore mollitia eaque! Tempore magnam neque rerum tenetur aut, dolorem ab. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quidem sint laudantium aliquid aspernatur nostrum mollitia impedit corporis veritatis exercitationem! Deleniti, quos aliquid? Quas sit fuga dolore quos accusantium maxime.</p>
+               <aside>
+                   <p>Artigo escrito por José da Silva.</p>
+               </aside>
+                </article>
+            </section>
+            
+        </main>
+        <footer> <!-- Rodapé -->
+            <p>Desenvolvido pelo Guto.</p>
+        </footer>
+        <div id="bola"></div>
+</html>
